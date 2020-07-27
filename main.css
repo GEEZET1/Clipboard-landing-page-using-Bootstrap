@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+/* global */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	font-size: 18px;
+	font-family: 'Bai Jamjuree', sans-serif;
+	overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h6 {
+	font-weight: bold;
+	color: hsl(210, 10%, 33%);
+}
+
+p {
+	font-size: 16px;
+	color: hsl(201, 11%, 66%);
+}
+
+.btn-ios {
+	color: whitesmoke;
+	background: hsl(171, 66%, 44%);
+	border-radius: 25px;
+	box-shadow: 0 3px 2px hsl(171, 60%, 40%);
+}
+
+.btn-mac {
+	color: whitesmoke;
+	background: hsl(233, 100%, 69%);
+	border-radius: 25px;
+	box-shadow: 0 3px 2px hsl(233, 94%, 65%);
+}
+
+/* divs */
+
+.logo {
+	background-image: url('/images/bg-header-desktop.png');
+	background-repeat: no-repeat;
+}
+
+.logo img {
+	padding: 100px 0;
+}
+
+.download {
+	padding: 0 0 100px 0;
+}
+
+.download p {
+	padding: 20px 0 30px;
+}
+
+.keep-track-info {
+	padding: 100px 0 200px;
+}
+
+.keep-track-info img {
+	width: 100%;
+	position: absolute;
+	left: -70px;
+	top: -400px;
+}
+
+.access-clipboard img {
+	width: 70%;
+}
+
+.keep-track-info-quick-search,
+.keep-track-info-icloud-sync,
+.keep-track-info-complete-history {
+	margin: 0 0 75px;
+}
+
+.card {
+	border: none;
+}
+
+.card img {
+	padding: 20px;
+}
+
+footer {
+	padding-top: 40px;
+	background: rgb(240, 240, 240);
+}
+
+footer img {
+	width: 60px;
+}
+
+ul,
+li a {
+	list-style-type: none;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+li:hover {
+	text-decoration: underline;
+}
+
+.social-media-links li {
+	display: inline;
+}
+.social-media-links img {
+	padding: 10px;
+	width: 50px;
+	height: auto;
+	margin: auto;
+}
+
+@media (max-width: 1090px) {
+	.btn-ios {
+		width: 90%;
+		margin: 0 auto 25px;
+	}
+
+	.btn-mac {
+		width: 90%;
+	}
+
+	.keep-track-info {
+		text-align: center;
+		padding: 0;
+	}
+
+	.keep-track-info img {
+		position: static;
+		width: 90%;
+		margin: auto;
+		padding: 0;
+	}
+
+	.sponsor img {
+		padding: 30px;
+	}
+
+	.download h2 {
+		padding: 30px;
+	}
+
+	footer {
+		text-align: center;
+	}
+}
