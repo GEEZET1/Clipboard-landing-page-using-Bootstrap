@@ -15,11 +15,7 @@ body {
 	overflow-x: hidden;
 }
 
-h1,
-h2,
-h3,
-h6 {
-	font-weight: bold;
+h1 {
 	color: hsl(210, 10%, 33%);
 }
 
@@ -33,6 +29,7 @@ p {
 	background: hsl(171, 66%, 44%);
 	border-radius: 25px;
 	box-shadow: 0 3px 2px hsl(171, 60%, 40%);
+	transition: transform 0.5s;
 }
 
 .btn-mac {
@@ -40,6 +37,37 @@ p {
 	background: hsl(233, 100%, 69%);
 	border-radius: 25px;
 	box-shadow: 0 3px 2px hsl(233, 94%, 65%);
+	transition: transform 0.5s;
+}
+
+.btn-ios:hover,
+.btn-mac:hover {
+	color: whitesmoke;
+	transform: translateY(-10%);
+}
+
+footer {
+	background: rgb(240, 240, 240);
+}
+
+footer img {
+	max-width: 60px;
+}
+
+ul,
+li a {
+	list-style-type: none;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+li {
+	transition: transform 1s;
+}
+
+li:hover {
+	color: hsl(171, 66%, 44%);
+	transform: translateY(-15%);
 }
 
 /* divs */
@@ -50,74 +78,52 @@ p {
 	background-size: contain;
 }
 
-.logo img {
-	padding: 100px 0;
-}
-
-.download {
-	padding: 0 0 100px 0;
-}
-
-.download p {
-	padding: 20px 0 30px;
-}
-
-.keep-track-info {
-	padding: 100px 0 200px;
-}
-
 .keep-track-info img {
-	width: 100%;
+	max-width: 100%;
 	position: relative;
 	left: -70px;
 }
 
 .access-clipboard img {
-	width: 70%;
-}
-
-.keep-track-info-quick-search,
-.keep-track-info-icloud-sync,
-.keep-track-info-complete-history {
-	margin: 0 0 75px;
+	max-width: 70%;
 }
 
 .card {
 	border: none;
 }
 
-.card img {
-	padding: 20px;
-}
-
-footer {
-	padding-top: 40px;
-	background: rgb(240, 240, 240);
-}
-
-footer img {
-	width: 60px;
-}
-
-ul,
-li a {
-	list-style-type: none;
-	text-decoration: none;
-	cursor: pointer;
-}
-
-li:hover {
-	text-decoration: underline;
-}
-
 .social-media-links li {
 	display: inline;
 }
+
 .social-media-links img {
 	padding: 10px;
-	width: 50px;
+	max-width: 40px;
 	height: auto;
 	margin: auto;
+}
+
+.svg-filter {
+	transition: transform 1s;
+}
+
+.svg-filter:hover {
+	filter: invert(58%) sepia(81%) saturate(382%) hue-rotate(122deg)
+		brightness(89%) contrast(91%);
+	transform: translateY(-15%);
+}
+
+@media (max-width: 792px) {
+	footer {
+		font-size: 0.7rem;
+	}
+}
+
+@media (max-width: 575px) {
+	footer {
+		text-align: center;
+		font-size: 1rem;
+	}
 }
 
 @media (max-width: 1090px) {
@@ -140,17 +146,5 @@ li:hover {
 		width: 90%;
 		margin: auto;
 		padding: 0;
-	}
-
-	.sponsor img {
-		padding: 30px;
-	}
-
-	.download h2 {
-		padding: 30px;
-	}
-
-	footer {
-		text-align: center;
 	}
 }
